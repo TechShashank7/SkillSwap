@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - SkillSwap</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the main CSS file -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1><img src="logo.svg" alt="SkillSwap Logo" class="logo">SkillSwap</h1>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+        </nav>
+      </header>
+
+    <!-- Main FAQ Section -->
+    <section class="faq-container">
+        <div class="faq-card">
+            <h2 class="question">What is SkillSwap?</h2>
+            <p class="answer">SkillSwap is a platform where people can exchange skills without using money. Users can offer their skills and in return, receive services from others.</p>
+        </div>
+        <div class="faq-card">
+            <h2 class="question">How do I sign up?</h2>
+            <p class="answer">To sign up, simply click on the 'Sign Up' button on the homepage, fill in your details, and you're good to go!</p>
+        </div>
+        <div class="faq-card">
+            <h2 class="question">How can I exchange skills?</h2>
+            <p class="answer">Once you’re signed in, you can browse available skills and exchange your services by clicking on the 'Swap Skill' button under each listed skill.</p>
+        </div>
+        <div class="faq-card">
+            <h2 class="question">Is SkillSwap free to use?</h2>
+            <p class="answer">Yes! SkillSwap is free to use. You can offer and receive skills without any financial transaction.</p>
+        </div>
+        <div class="faq-card">
+            <h2 class="question">Can I add a new skill to SkillSwap?</h2>
+            <p class="answer">Absolutely! Once signed in, you can go to your profile and add a new skill to the platform for others to see.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SkillSwap. All rights reserved.</p>
+    </footer>
+    <script>
+        // Toggle answer visibility when clicking on the question
+        document.querySelectorAll('.faq-card h2.question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parentCard = item.parentElement;
+                parentCard.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

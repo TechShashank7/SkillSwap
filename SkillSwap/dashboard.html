@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap Dashboard</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1><img src="logo.svg" alt="SkillSwap Logo" class="logo">SkillSwap</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li>
+          <label class="theme-toggle">
+            <input type="checkbox" onchange="toggleTheme()">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <section class="welcome">
+      <h2>Welcome back to SkillSwap!</h2>
+      <p>Ready to continue your learning journey or help others grow?</p>
+    </section>
+
+    <section class="your-skills">
+      <h3>Your Skills</h3>
+      <div class="skill-grid">
+        <div class="skill-card">Yoga <span>60% Complete</span></div>
+        <div class="skill-card">Photography <span>In Progress</span></div>
+      </div>
+    </section>
+
+    <section class="recommended-skills">
+      <h3>Recommended For You</h3>
+      <div class="skill-grid">
+        <div class="skill-card">Web Development</div>
+        <div class="skill-card">Creative Writing</div>
+      </div>
+    </section>
+
+    <section class="messages">
+      <h3>Messages</h3>
+      <div class="message-card">
+        <p><strong>Alice</strong> wants to learn Yoga from you.</p>
+        <button>Accept</button>
+        <button>Reject</button>
+      </div>
+    </section>
+
+    <section class="quick-actions">
+      <h3>Quick Actions</h3>
+      <div class="action-buttons">
+        <button onclick="location.href='addskill.html'">Add Skill</button>
+        <button onclick="location.href='index.html#popular-skills'">Browse Skills</button>
+        <button onclick="location.href='profile.html'">Profile</button>
+        <button onclick="location.href='signin.html'">Log Out</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SkillSwap. All rights reserved.</p>
+  </footer>
+</body>
+</html>

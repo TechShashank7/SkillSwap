@@ -1,0 +1,184 @@
+.photo-hero {
+  background: linear-gradient(rgba(33, 33, 33, 0.5), rgba(66, 66, 66, 0.5)),
+              url('../attached_assets/yogaDiv.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: white;
+  text-align: center;
+  padding: 6em 2em;
+  margin-bottom: 4em;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.photo-hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 2em;
+  opacity: 0.9;
+}
+
+.learn-teach {
+  display: flex;
+  gap: 4em;
+  padding: 4em 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.learn-section {
+  flex: 1;
+  padding: 2em;
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.teach-section {
+  flex: 1;
+  padding: 2em;
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.learn-section h2, .teach-section h2 {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.learn-section ul, .teach-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.learn-section li, .teach-section li {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.learn-section li:before, .teach-section li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+
+.topics-grid {
+  padding: 4em 2em;
+  background: linear-gradient(135deg, rgba(33, 33, 33, 0.05), rgba(66, 66, 66, 0.1));
+}
+
+.topics-grid h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.topics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topic-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.topic-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topic-card h3, .topic-card p {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.topics-container .topic-card:nth-child(1) { background-image: url('../attached_assets/yoga_fundamentals.png'); }
+.topics-container .topic-card:nth-child(2) { background-image: url('../attached_assets/breathing_techniques.png'); }
+.topics-container .topic-card:nth-child(3) { background-image: url('../attached_assets/mindfulness&meditation.png'); }
+.topics-container .topic-card:nth-child(4) { background-image: url('../attached_assets/flexibility&strength.png'); }
+.topics-container .topic-card:nth-child(5) { background-image: url('../attached_assets/daily_routine.png'); }
+.topics-container .topic-card:nth-child(6) { background-image: url('../attached_assets/teaching&community.png'); }
+
+.photo-cta {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+  text-align: center;
+  padding: 6em 2em;
+}
+
+[data-theme="dark"] .photo-cta {
+  background: linear-gradient(135deg, #000000, #1e1e1e);
+  color: #a9b1d6;
+}
+
+.photo-cta h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.photo-cta p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 2em;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+  .learn-teach {
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 1em;
+  }
+
+  .topics-container {
+    grid-template-columns: 1fr;
+    padding: 0 1em;
+  }
+
+  .photo-hero,
+  .photo-cta {
+    padding: 4em 1em;
+  }
+
+  .photo-hero h1 {
+    font-size: 2em;
+  }
+}

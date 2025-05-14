@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top curve of the "S" with left-facing arrow -->
+  <path d="M80,20 
+           C70,5 30,5 20,20 
+           L35,35 
+           L25,35 
+           L15,25 
+           L25,15 
+           L25,25 
+           C35,10 65,10 75,25 
+           Z" 
+        fill="#007BFF" />
+
+  <!-- Bottom curve of the "S" with right-facing arrow -->
+  <path d="M20,80 
+           C30,95 70,95 80,80 
+           L65,65 
+           L75,65 
+           L85,75 
+           L75,85 
+           L75,75 
+           C65,90 35,90 25,75 
+           Z" 
+        fill="#007BFF" />
+</svg>
